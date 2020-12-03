@@ -21,8 +21,4 @@ services:
   nexus:
     image: sonatype/nexus3
     volumes:
-      - 'nexus-data:/nexus-data'
-
-volumes:
-  nexus-data:
-
+      - '/root/nexus-data:/nexus-data'
